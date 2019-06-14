@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    margin-right: 65px;
+}
+
+#holdLogo {
+    display: flex;
+    margin-left: 120px;
+    margin-right: 10px;
+}
+
+#logo {
+    color:#606B9B;
+    font-family: 'Raleway', sans-serif;
+    font-size: 6vw;
+    transform: scale(1,.9);
+    text-align: center;
+}
+
+#review_div {
+    display: flex;
+    margin-top: 65px;
+    margin-bottom: 20px;
+    margin-right: 150px;
+    margin-left: 10px;
+}
+
+#add {
+    background-color:#606B9B;
+    height: 7.1vh;
+    width: 11vw;
+    border-radius: 12px;
+    font-size: 2vw;
+    color: white;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#overall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#inputDiv {
+    display: flex;
+    width: 200px;
+    height: 260px;
+    position: relative;
+    border: 1px solid #ccc;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px; 
+}
+
+
+/*React.createElement("div", {id: "card", onClick: "flip"}, */
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.card div {
+       display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 140px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/*React.creatElement("div", {id: "front"}, React.createElement("p", {id: "word"}),*/
+#front {
+    background: red;
+}
+
+/*React.creatElement("div", {id: "back"}, React.createElement("p", {id: "answer"}),*/
+#back {
+        background: blue;
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+ 
+
+/*--------Testing flip--------------*/
+
+#outputDiv {
+    display: flex;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-style: solid;
+}
+
+/*#word {
+  height:250px;
+  width: 750px;
+  text-align: center;
+  font-size:30pt;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}*/
+
+#image {
+    height: 50px;
+    width: 50px;
+}
+
+#outputGoesHere  {
+    display: flex;
+    height:100px;
+    width: 795px;
+    font-size:30pt;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+#nextDiv {
+    margin-bottom: 150px;
+    margin-top: 40px;
+    margin-right: 220px;
+    margin-left: 20px;
+}
+
+#next {
+    background-color:#70C7A9;
+    height: 7.1vh;
+    width: 12vw;
+    font-size: 2vw;
+    color: white;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    text-align: center;
+    float: right;
+    border-radius: 12px;
+}
+
+footer.foot {
+    background-color: #606B9B;
+    text-align: center;
+    color: white;
+    height: 50px;
+    font-size: 2vw;
+}
