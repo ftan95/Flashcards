@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    min-height: 100vh;  /* needed to make sure body fills up window */
+/*  Choose a font stack. A browser uses the first
+    font in the stack that it has.  */
+/* the whole body is a flexbox container */
+  display: flex;
+  flex-direction: column;  /* stack items inside vertically */
+  justify-content: flex-start;
+}
+
+#overall {
+    display: flex;
+    flex-direction: row;
+}
+
+#welcome {
+    display: flex;
+    background-image: linear-gradient(to top left, #B191D4, #606B9B);
+    width: 50%;
+    height: 50vw;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#lango {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60pt;
+    color: white;
+    font-weight: bold;
+}
+
+#custom {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5vw;
+    color: #70C7A9;
+    font-weight: 100;
+}
+
+#login {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(211, 211, 211),rgb(255, 255, 255) 10%);
+}
+
+#loginButton {
+    background-color: #70C7A9;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: white;
+    height: 50px;
+    width: 250px;
+}
+
+#image {
+    height: 40px;
+    width: 48px;
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-top: 4px;
+}
